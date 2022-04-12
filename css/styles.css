@@ -63,9 +63,12 @@ img {
 /* header */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border: 1px solid #ECECEC;
+}
+
+.header-container>.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-container {
@@ -100,6 +103,8 @@ img {
 }
 
 .nav-list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -117,6 +122,8 @@ img {
 }
 
 .contact-information {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -144,6 +151,10 @@ img {
   padding: 200px 0;
   background: var(--main-bg-color);
   text-align: center;
+}
+
+.hero>.container {
+  width: 696px;
 }
 
 .modal-btn {
@@ -179,9 +190,6 @@ img {
 }
 
 /* our work principles section */
-.work-principles {
-  padding-top: 94px;
-}
 
 .hidden-title {
   display: none;
@@ -198,10 +206,6 @@ img {
   margin-left: 30px;
   flex-basis: calc((100% - 120px) / 4);
 }
-
-/* .work-principles-item:nth-child(4) {
-  margin-right: 0px;
-} */
 
 .subtitle {
   margin-bottom: 10px;
@@ -222,6 +226,11 @@ img {
 
 /* our work */
 /* our team section */
+
+.work-section {
+  padding-bottom: 94px;
+}
+
 .section-title {
   margin-bottom: 50px;
   text-align: center;
@@ -344,7 +353,16 @@ margin-bottom: 50px;
   color: var(--title-text-color);
   background: var(--secondary-bg-color);
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.button-set .type-projects-button.current {
+  color: var(--secondary-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .type-projects-button:hover,
